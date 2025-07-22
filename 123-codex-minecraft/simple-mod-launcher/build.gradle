@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClass = 'mc.launcher.Launcher'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}

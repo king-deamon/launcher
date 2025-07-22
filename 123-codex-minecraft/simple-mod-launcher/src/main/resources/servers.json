@@ -1,0 +1,14 @@
+[
+  {
+    "name": "MyModServer",
+    "modpackUrl": "https://example.com/modpack.zip",
+    "instanceDir": "instances/MyModServer",
+    "gameJar": "forge.jar"
+  },
+  {
+    "name": "AnotherServer",
+    "modpackUrl": "https://cdn.server.com/packs/another.zip",
+    "instanceDir": "instances/AnotherServer",
+    "gameJar": "fabric.jar"
+  }
+]

@@ -12,6 +12,14 @@ gradle shadowJar
 
 The resulting runnable JAR will be at `build/libs/gravit-launcher-all.jar`.
 
+To wrap the JAR into a Windows executable using Launch4j run:
+
+```bash
+gradle createExe
+```
+
+The EXE file will be placed in `build/launch4j/GravitLauncher.exe`.
+
 ## Running
 
 Execute the launcher using the packaged JAR:

@@ -1,6 +1,7 @@
 plugins {
     id 'application'
     id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id 'edu.sc.seis.launch4j' version '3.0.5'
 }
 
 application {
@@ -31,4 +32,11 @@ tasks.named('shadowJar') {
     manifest {
         attributes 'Main-Class': application.mainClass.get()
     }
+}
+
+launch4j {
+    mainClassName = application.mainClass.get()
+    jarTask = tasks.named('shadowJar').get()
+    outfile = 'GravitLauncher.exe'
+    libraryDir = 'lib'
 }

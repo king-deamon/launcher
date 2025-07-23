@@ -1,0 +1,8 @@
+[
+  {
+    "name": "TestServer",
+    "modpackUrl": "https://example.com/modpack.zip",
+    "instanceDir": "instances/TestServer",
+    "gameJar": "forge.jar"
+  }
+]
